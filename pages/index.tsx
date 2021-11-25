@@ -44,10 +44,14 @@ const Home: NextPage = () => {
         <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end gap-2">
             <Link href="/">
-              <a className="text-primary">Log in</a>
+              <a className="btn text-primary border-primary md:border-2">
+                Log in
+              </a>
             </Link>
             <Link href="/">
-              <a className="text-primary">Sign up</a>
+              <a className="btn text-primary border-primary md:border-2">
+                Sign up
+              </a>
             </Link>
           </div>
 
@@ -146,7 +150,9 @@ const Home: NextPage = () => {
             <div className="mt-8">{/* Cards go here */}</div>
 
             <div className="flex justify-center">
-              <a className="bg-secondary-100 text-secondary-200">Load more</a>
+              <a className="btn bg-secondary-100 text-secondary-200">
+                Load more
+              </a>
             </div>
           </div>
         </main>
