@@ -8,7 +8,7 @@ const Home: NextPage = () => {
         <div>
           <nav>
             <div>
-              <h1 className="font-bold uppercase">
+              <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
                   <a>Sebel Food</a>
                 </Link>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             </ul>
           </nav>
         </div>
-        <main>
+        <main className="px-16 py-6">
           <div>
             <Link href="/">
               <a>Log in</a>
@@ -55,8 +55,10 @@ const Home: NextPage = () => {
           </header>
 
           <div>
-            <h4 className="font-bold">Latest Recipes</h4>
-            <div>
+            <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+              Latest Recipes
+            </h4>
+            <div className="mt-8">
               {/* Cards go here */}
               <div>
                 <img src="/img/stew.jpg" alt="Stew" />
@@ -67,11 +69,13 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            <h4 className="font-bold">Most Popular</h4>
-            <div>{/* Cards go here */}</div>
+            <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+              Most Popular
+            </h4>
+            <div className="mt-8">{/* Cards go here */}</div>
 
             <div>
-              <a></a>
+              <a>Load more</a>
             </div>
           </div>
         </main>
