@@ -7,7 +7,7 @@
 }
 
 .badge {
-  @apply bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full uppercase p-2 absolute top-0 ml-2 mt-2;
+  @apply bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full uppercase p-2 absolute top-0 ml-2 mt-2 flex gap-1 items-center;
 }
 
 .btn {
