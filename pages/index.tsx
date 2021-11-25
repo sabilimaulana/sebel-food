@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -60,17 +61,23 @@ const Home: NextPage = () => {
             </h4>
             <div className="mt-8">
               {/* Cards go here */}
-              <div className="bg-white rounded overflow-hidden shadow-md">
-                <img
-                  src="/img/stew.jpg"
-                  alt="Stew"
-                  className="w-full h-32 sm:h-48 object-cover"
-                />
+              <div className="bg-white rounded overflow-hidden shadow-md relative">
+                <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
+                  <Image
+                    src="/img/stew.jpg"
+                    alt="Stew"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </figure>
                 <div className="m-4">
                   <span className="font-bold">5 Bean Chilli Stew</span>{" "}
                   <span className="block text-gray-500 text-sm">
                     Recipe by Mario
                   </span>
+                </div>
+                <div className="bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full uppercase p-2 absolute top-0 ml-2 mt-2">
+                  <span>25 mins</span>
                 </div>
               </div>
             </div>
