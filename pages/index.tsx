@@ -1,21 +1,49 @@
 import type { NextPage } from "next";
+import { useState } from "react";
+import cx from "classnames";
 import Link from "next/link";
 import Image from "next/image";
 
 const Home: NextPage = () => {
+  const [isShowMenu, setIsShowMenu] = useState(false);
+
+  const menuClass = cx({
+    "text-sm": true,
+    "mt-6": !isShowMenu,
+    hidden: !isShowMenu,
+    "md:block": true
+  });
+
   return (
     <div className="text-gray-600 font-body">
       <div className="grid md:grid-cols-3">
         <div className="md:col-span-1 md:flex md:justify-end">
           <nav className="text-right">
-            <div>
+            <div className="flex justify-between justify-items-end items-center">
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
-                  <a className="hover:text-gray-700 ">Sebel Food</a>
+                  <a className="hover:text-gray-700">Sebel Food</a>
                 </Link>
               </h1>
+              <div
+                className="px-4 cursor-pointer md:hidden"
+                onClick={() => setIsShowMenu((c) => !c)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </div>
             </div>
-            <ul className="text-sm mt-6">
+            <ul className={menuClass}>
               <li className="text-gray-700 font-bold py-1">
                 <Link href="/">
                   <a className="px-4 flex justify-end gap-2 border-r-4 border-primary">
