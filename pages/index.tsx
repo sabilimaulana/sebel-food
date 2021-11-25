@@ -6,8 +6,8 @@ const Home: NextPage = () => {
   return (
     <div className="text-gray-600 font-body">
       <div className="grid md:grid-cols-3">
-        <div className="md:col-span-1">
-          <nav>
+        <div className="md:col-span-1 md:flex md:justify-end">
+          <nav className="text-right">
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
@@ -15,10 +15,10 @@ const Home: NextPage = () => {
                 </Link>
               </h1>
             </div>
-            <ul>
-              <li className="text-gray-700 font-bold">
+            <ul className="text-sm mt-6">
+              <li className="text-gray-700 font-bold py-1">
                 <Link href="/">
-                  <a>
+                  <a className="px-4 flex justify-end gap-2 border-r-4 border-primary">
                     <span>Home</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +36,9 @@ const Home: NextPage = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className="py-1">
                 <Link href="/">
-                  <a>
+                  <a className="px-4 flex justify-end gap-2 border-r-4 border-white">
                     <span>About</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,9 +56,9 @@ const Home: NextPage = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className="py-1">
                 <Link href="/">
-                  <a>
+                  <a className="px-4 flex justify-end gap-2 border-r-4 border-white">
                     <span>Contact</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
