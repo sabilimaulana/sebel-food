@@ -11,7 +11,7 @@ const Home: NextPage = () => {
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
-                  <a>Sebel Food</a>
+                  <a className="hover:text-gray-700 ">Sebel Food</a>
                 </Link>
               </h1>
             </div>
@@ -83,12 +83,12 @@ const Home: NextPage = () => {
         <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end gap-2">
             <Link href="/">
-              <a className="btn text-primary border-primary md:border-2">
+              <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">
                 Log in
               </a>
             </Link>
             <Link href="/">
-              <a className="btn text-primary border-primary md:border-2">
+              <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">
                 Sign up
               </a>
             </Link>
@@ -241,7 +241,7 @@ const Home: NextPage = () => {
             <div className="mt-8">{/* Cards go here */}</div>
 
             <div className="flex justify-center">
-              <a className="btn bg-secondary-100 text-secondary-200">
+              <a className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner font-bold">
                 Load more
               </a>
             </div>
