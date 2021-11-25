@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           </nav>
         </div>
         <main className="px-16 py-6">
-          <div className="flex justify-end gap-2">
+          <div className="flex justify-center md:justify-end gap-2">
             <Link href="/">
               <a className="text-primary">Log in</a>
             </Link>
