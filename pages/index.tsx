@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             </h4>
             <div className="mt-8">
               {/* Cards go here */}
-              <div className="bg-white rounded overflow-hidden shadow-md relative">
+              <div className="card">
                 <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
                   <Image
                     src="/img/stew.jpg"
@@ -76,7 +76,45 @@ const Home: NextPage = () => {
                     Recipe by Mario
                   </span>
                 </div>
-                <div className="bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full uppercase p-2 absolute top-0 ml-2 mt-2">
+                <div className="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+              <div className="card">
+                <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
+                  <Image
+                    src="/img/noodles.jpg"
+                    alt="Noodles"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </figure>
+                <div className="m-4">
+                  <span className="font-bold">Vwg Noodles</span>{" "}
+                  <span className="block text-gray-500 text-sm">
+                    Recipe by Princess Peach
+                  </span>
+                </div>
+                <div className="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+              <div className="card">
+                <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
+                  <Image
+                    src="/img/curry.jpg"
+                    alt="Curry"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </figure>
+                <div className="m-4">
+                  <span className="font-bold">Tofu Curry</span>{" "}
+                  <span className="block text-gray-500 text-sm">
+                    Recipe by Luigi
+                  </span>
+                </div>
+                <div className="badge">
                   <span>25 mins</span>
                 </div>
               </div>
