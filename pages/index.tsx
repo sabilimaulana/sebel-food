@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-gray-600">
+    <div className="text-gray-600 font-body">
       <div>
         <div>
           <nav>
@@ -40,12 +40,12 @@ const Home: NextPage = () => {
           </nav>
         </div>
         <main className="px-16 py-6">
-          <div>
+          <div className="flex justify-end gap-2">
             <Link href="/">
-              <a>Log in</a>
+              <a className="text-primary">Log in</a>
             </Link>
             <Link href="/">
-              <a>Sign up</a>
+              <a className="text-primary">Sign up</a>
             </Link>
           </div>
 
@@ -63,8 +63,7 @@ const Home: NextPage = () => {
               <div>
                 <img src="/img/stew.jpg" alt="Stew" />
                 <div>
-                  <span>5 Bean Chilli Stew</span>
-                  <span>Recipe by Mario</span>
+                  <span>5 Bean Chilli Stew</span> <span>Recipe by Mario</span>
                 </div>
               </div>
             </div>
@@ -74,8 +73,8 @@ const Home: NextPage = () => {
             </h4>
             <div className="mt-8">{/* Cards go here */}</div>
 
-            <div>
-              <a>Load more</a>
+            <div className="flex justify-center">
+              <a className="bg-secondary-100 text-secondary-200">Load more</a>
             </div>
           </div>
         </main>
