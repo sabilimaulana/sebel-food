@@ -5,8 +5,8 @@ import Image from "next/image";
 const Home: NextPage = () => {
   return (
     <div className="text-gray-600 font-body">
-      <div>
-        <div>
+      <div className="grid md:grid-cols-3">
+        <div className="md:col-span-1">
           <nav>
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
@@ -40,7 +40,8 @@ const Home: NextPage = () => {
             </ul>
           </nav>
         </div>
-        <main className="px-16 py-6 bg-gray-100">
+
+        <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end gap-2">
             <Link href="/">
               <a className="text-primary">Log in</a>
@@ -59,7 +60,7 @@ const Home: NextPage = () => {
             <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
               Latest Recipes
             </h4>
-            <div className="mt-8">
+            <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-10 lg:grid-cols-3 2xl:grid-cols-4">
               {/* Cards go here */}
               <div className="card">
                 <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
@@ -112,6 +113,25 @@ const Home: NextPage = () => {
                   <span className="font-bold">Tofu Curry</span>{" "}
                   <span className="block text-gray-500 text-sm">
                     Recipe by Luigi
+                  </span>
+                </div>
+                <div className="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+              <div className="card">
+                <figure className="relative overflow-hidden w-full h-32 sm:h-48 object-cover">
+                  <Image
+                    src="/img/soup.jpg"
+                    alt="Soup"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </figure>
+                <div className="m-4">
+                  <span className="font-bold">Vegetable Soup</span>{" "}
+                  <span className="block text-gray-500 text-sm">
+                    Recipe by Mario
                   </span>
                 </div>
                 <div className="badge">
