@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             </ul>
           </nav>
         </div>
-        <main className="px-16 py-6">
+        <main className="px-16 py-6 bg-gray-100">
           <div className="flex justify-center md:justify-end gap-2">
             <Link href="/">
               <a className="text-primary">Log in</a>
@@ -60,10 +60,17 @@ const Home: NextPage = () => {
             </h4>
             <div className="mt-8">
               {/* Cards go here */}
-              <div>
-                <img src="/img/stew.jpg" alt="Stew" />
-                <div>
-                  <span>5 Bean Chilli Stew</span> <span>Recipe by Mario</span>
+              <div className="bg-white rounded overflow-hidden shadow-md">
+                <img
+                  src="/img/stew.jpg"
+                  alt="Stew"
+                  className="w-full h-32 sm:h-48 object-cover"
+                />
+                <div className="m-4">
+                  <span className="font-bold">5 Bean Chilli Stew</span>{" "}
+                  <span className="block text-gray-500 text-sm">
+                    Recipe by Mario
+                  </span>
                 </div>
               </div>
             </div>
